@@ -1,6 +1,9 @@
 import express from 'express';
 import userRouter from './routes/route.js';
 import { connectDB } from './config/db.js';
+import dotenv from 'dotenv';
+
+dotenv.config(); // loads .env into process.env
 
 const app = express();
 app.use(express.json());
